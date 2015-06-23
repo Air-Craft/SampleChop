@@ -1,0 +1,325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A604DB2A1B39B6F700F7016A /* BellAudioFile.mm in Sources */ = {isa = PBXBuildFile; fileRef = A604DB0F1B39B6F700F7016A /* BellAudioFile.mm */; };
+		A604DB2B1B39B6F700F7016A /* BellDefs.m in Sources */ = {isa = PBXBuildFile; fileRef = A604DB111B39B6F700F7016A /* BellDefs.m */; };
+		A604DB2C1B39B6F700F7016A /* BellExceptions.m in Sources */ = {isa = PBXBuildFile; fileRef = A604DB131B39B6F700F7016A /* BellExceptions.m */; };
+		A604DB2E1B39B6F700F7016A /* BellUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A604DB171B39B6F700F7016A /* BellUtils.m */; };
+		A604DB2F1B39B6F700F7016A /* BufferPool.mm in Sources */ = {isa = PBXBuildFile; fileRef = A604DB1B1B39B6F700F7016A /* BufferPool.mm */; };
+		A604DB301B39B6F700F7016A /* RingBuffer.mm in Sources */ = {isa = PBXBuildFile; fileRef = A604DB1D1B39B6F700F7016A /* RingBuffer.mm */; };
+		A604DB361B39B6F700F7016A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A604DB291B39B6F700F7016A /* README.md */; };
+		A604DB381B39B7E200F7016A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A604DB371B39B7E200F7016A /* AVFoundation.framework */; };
+		A604DB3A1B39BF2E00F7016A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A604DB391B39BF2E00F7016A /* AudioToolbox.framework */; };
+		A604DB3C1B39C0F100F7016A /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A604DB3B1B39C0F100F7016A /* Accelerate.framework */; };
+		A604DB3E1B39C2D200F7016A /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = A604DB3D1B39C2D200F7016A /* main.mm */; };
+		A604DB3F1B39C54900F7016A /* samplechop in CopyFiles */ = {isa = PBXBuildFile; fileRef = A604DAFE1B39B5ED00F7016A /* samplechop */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A604DAFC1B39B5ED00F7016A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = /usr/local/bin;
+			dstSubfolderSpec = 0;
+			files = (
+				A604DB3F1B39C54900F7016A /* samplechop in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A604DAFE1B39B5ED00F7016A /* samplechop */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = samplechop; sourceTree = BUILT_PRODUCTS_DIR; };
+		A604DB0D1B39B6F700F7016A /* Bell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bell.h; sourceTree = "<group>"; };
+		A604DB0E1B39B6F700F7016A /* BellAudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BellAudioFile.h; sourceTree = "<group>"; };
+		A604DB0F1B39B6F700F7016A /* BellAudioFile.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BellAudioFile.mm; sourceTree = "<group>"; };
+		A604DB101B39B6F700F7016A /* BellDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BellDefs.h; sourceTree = "<group>"; };
+		A604DB111B39B6F700F7016A /* BellDefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BellDefs.m; sourceTree = "<group>"; };
+		A604DB121B39B6F700F7016A /* BellExceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BellExceptions.h; sourceTree = "<group>"; };
+		A604DB131B39B6F700F7016A /* BellExceptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BellExceptions.m; sourceTree = "<group>"; };
+		A604DB161B39B6F700F7016A /* BellUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BellUtils.h; sourceTree = "<group>"; };
+		A604DB171B39B6F700F7016A /* BellUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BellUtils.m; sourceTree = "<group>"; };
+		A604DB191B39B6F700F7016A /* AtomicTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtomicTypes.h; sourceTree = "<group>"; };
+		A604DB1A1B39B6F700F7016A /* BufferPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BufferPool.h; sourceTree = "<group>"; };
+		A604DB1B1B39B6F700F7016A /* BufferPool.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BufferPool.mm; sourceTree = "<group>"; };
+		A604DB1C1B39B6F700F7016A /* RingBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RingBuffer.h; sourceTree = "<group>"; };
+		A604DB1D1B39B6F700F7016A /* RingBuffer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RingBuffer.mm; sourceTree = "<group>"; };
+		A604DB291B39B6F700F7016A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A604DB371B39B7E200F7016A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A604DB391B39BF2E00F7016A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A604DB3B1B39C0F100F7016A /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		A604DB3D1B39C2D200F7016A /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A604DAFB1B39B5ED00F7016A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A604DB3C1B39C0F100F7016A /* Accelerate.framework in Frameworks */,
+				A604DB3A1B39BF2E00F7016A /* AudioToolbox.framework in Frameworks */,
+				A604DB381B39B7E200F7016A /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A604DAF51B39B5ED00F7016A = {
+			isa = PBXGroup;
+			children = (
+				A604DB3B1B39C0F100F7016A /* Accelerate.framework */,
+				A604DB391B39BF2E00F7016A /* AudioToolbox.framework */,
+				A604DB371B39B7E200F7016A /* AVFoundation.framework */,
+				A604DB001B39B5ED00F7016A /* SampleChop */,
+				A604DB081B39B6F700F7016A /* Vendor */,
+				A604DAFF1B39B5ED00F7016A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A604DAFF1B39B5ED00F7016A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A604DAFE1B39B5ED00F7016A /* samplechop */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A604DB001B39B5ED00F7016A /* SampleChop */ = {
+			isa = PBXGroup;
+			children = (
+				A604DB3D1B39C2D200F7016A /* main.mm */,
+			);
+			path = SampleChop;
+			sourceTree = "<group>";
+		};
+		A604DB081B39B6F700F7016A /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				A604DB0C1B39B6F700F7016A /* Bell */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		A604DB0C1B39B6F700F7016A /* Bell */ = {
+			isa = PBXGroup;
+			children = (
+				A604DB291B39B6F700F7016A /* README.md */,
+				A604DB0D1B39B6F700F7016A /* Bell.h */,
+				A604DB0E1B39B6F700F7016A /* BellAudioFile.h */,
+				A604DB0F1B39B6F700F7016A /* BellAudioFile.mm */,
+				A604DB101B39B6F700F7016A /* BellDefs.h */,
+				A604DB111B39B6F700F7016A /* BellDefs.m */,
+				A604DB121B39B6F700F7016A /* BellExceptions.h */,
+				A604DB131B39B6F700F7016A /* BellExceptions.m */,
+				A604DB161B39B6F700F7016A /* BellUtils.h */,
+				A604DB171B39B6F700F7016A /* BellUtils.m */,
+				A604DB181B39B6F700F7016A /* c++ */,
+			);
+			name = Bell;
+			path = Bell/Bell;
+			sourceTree = "<group>";
+		};
+		A604DB181B39B6F700F7016A /* c++ */ = {
+			isa = PBXGroup;
+			children = (
+				A604DB191B39B6F700F7016A /* AtomicTypes.h */,
+				A604DB1A1B39B6F700F7016A /* BufferPool.h */,
+				A604DB1B1B39B6F700F7016A /* BufferPool.mm */,
+				A604DB1C1B39B6F700F7016A /* RingBuffer.h */,
+				A604DB1D1B39B6F700F7016A /* RingBuffer.mm */,
+			);
+			path = "c++";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A604DAFD1B39B5ED00F7016A /* SampleChop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A604DB051B39B5ED00F7016A /* Build configuration list for PBXNativeTarget "SampleChop" */;
+			buildPhases = (
+				A604DAFA1B39B5ED00F7016A /* Sources */,
+				A604DAFB1B39B5ED00F7016A /* Frameworks */,
+				A604DAFC1B39B5ED00F7016A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleChop;
+			productName = SampleChop;
+			productReference = A604DAFE1B39B5ED00F7016A /* samplechop */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A604DAF61B39B5ED00F7016A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Air Craft";
+				TargetAttributes = {
+					A604DAFD1B39B5ED00F7016A = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A604DAF91B39B5ED00F7016A /* Build configuration list for PBXProject "SampleChop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A604DAF51B39B5ED00F7016A;
+			productRefGroup = A604DAFF1B39B5ED00F7016A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A604DAFD1B39B5ED00F7016A /* SampleChop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A604DAFA1B39B5ED00F7016A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A604DB2C1B39B6F700F7016A /* BellExceptions.m in Sources */,
+				A604DB2B1B39B6F700F7016A /* BellDefs.m in Sources */,
+				A604DB2F1B39B6F700F7016A /* BufferPool.mm in Sources */,
+				A604DB2E1B39B6F700F7016A /* BellUtils.m in Sources */,
+				A604DB2A1B39B6F700F7016A /* BellAudioFile.mm in Sources */,
+				A604DB361B39B6F700F7016A /* README.md in Sources */,
+				A604DB3E1B39C2D200F7016A /* main.mm in Sources */,
+				A604DB301B39B6F700F7016A /* RingBuffer.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A604DB031B39B5ED00F7016A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A604DB041B39B5ED00F7016A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A604DB061B39B5ED00F7016A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = samplechop;
+			};
+			name = Debug;
+		};
+		A604DB071B39B5ED00F7016A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = samplechop;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A604DAF91B39B5ED00F7016A /* Build configuration list for PBXProject "SampleChop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A604DB031B39B5ED00F7016A /* Debug */,
+				A604DB041B39B5ED00F7016A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A604DB051B39B5ED00F7016A /* Build configuration list for PBXNativeTarget "SampleChop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A604DB061B39B5ED00F7016A /* Debug */,
+				A604DB071B39B5ED00F7016A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A604DAF61B39B5ED00F7016A /* Project object */;
+}
