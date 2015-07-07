@@ -157,8 +157,8 @@
 				A66212851B39FB4000E42235 /* AC_TimeVaryingEnvelopeFollower.h */,
 				A66212841B39FB4000E42235 /* AC_TimeVaryingEnvelopeFollower.cpp */,
 				A66212881B39FB4000E42235 /* LICENSE */,
-				A662128B1B39FC6F00E42235 /* AC_Gate.cpp */,
 				A662128C1B39FC6F00E42235 /* AC_Gate.h */,
+				A662128B1B39FC6F00E42235 /* AC_Gate.cpp */,
 			);
 			path = AirCraftDSP;
 			sourceTree = "<group>";
