@@ -19,6 +19,9 @@
 		A604DB3C1B39C0F100F7016A /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A604DB3B1B39C0F100F7016A /* Accelerate.framework */; };
 		A604DB3E1B39C2D200F7016A /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = A604DB3D1B39C2D200F7016A /* main.mm */; };
 		A604DB3F1B39C54900F7016A /* samplechop in CopyFiles */ = {isa = PBXBuildFile; fileRef = A604DAFE1B39B5ED00F7016A /* samplechop */; };
+		A66212891B39FB4000E42235 /* AC_TimeVaryingEnvelopeFollower.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A66212841B39FB4000E42235 /* AC_TimeVaryingEnvelopeFollower.cpp */; };
+		A662128A1B39FB4000E42235 /* AC_TimeVaryingLowPassFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A66212861B39FB4000E42235 /* AC_TimeVaryingLowPassFilter.cpp */; };
+		A662128D1B39FC6F00E42235 /* AC_Gate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A662128B1B39FC6F00E42235 /* AC_Gate.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +58,13 @@
 		A604DB391B39BF2E00F7016A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A604DB3B1B39C0F100F7016A /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		A604DB3D1B39C2D200F7016A /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		A66212841B39FB4000E42235 /* AC_TimeVaryingEnvelopeFollower.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AC_TimeVaryingEnvelopeFollower.cpp; sourceTree = "<group>"; };
+		A66212851B39FB4000E42235 /* AC_TimeVaryingEnvelopeFollower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AC_TimeVaryingEnvelopeFollower.h; sourceTree = "<group>"; };
+		A66212861B39FB4000E42235 /* AC_TimeVaryingLowPassFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AC_TimeVaryingLowPassFilter.cpp; sourceTree = "<group>"; };
+		A66212871B39FB4000E42235 /* AC_TimeVaryingLowPassFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AC_TimeVaryingLowPassFilter.h; sourceTree = "<group>"; };
+		A66212881B39FB4000E42235 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A662128B1B39FC6F00E42235 /* AC_Gate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AC_Gate.cpp; sourceTree = "<group>"; };
+		A662128C1B39FC6F00E42235 /* AC_Gate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AC_Gate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +112,7 @@
 		A604DB081B39B6F700F7016A /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				A66212811B39FB4000E42235 /* AirCraftDSP */,
 				A604DB0C1B39B6F700F7016A /* Bell */,
 			);
 			path = Vendor;
@@ -136,6 +147,20 @@
 				A604DB1D1B39B6F700F7016A /* RingBuffer.mm */,
 			);
 			path = "c++";
+			sourceTree = "<group>";
+		};
+		A66212811B39FB4000E42235 /* AirCraftDSP */ = {
+			isa = PBXGroup;
+			children = (
+				A66212871B39FB4000E42235 /* AC_TimeVaryingLowPassFilter.h */,
+				A66212861B39FB4000E42235 /* AC_TimeVaryingLowPassFilter.cpp */,
+				A66212851B39FB4000E42235 /* AC_TimeVaryingEnvelopeFollower.h */,
+				A66212841B39FB4000E42235 /* AC_TimeVaryingEnvelopeFollower.cpp */,
+				A66212881B39FB4000E42235 /* LICENSE */,
+				A662128B1B39FC6F00E42235 /* AC_Gate.cpp */,
+				A662128C1B39FC6F00E42235 /* AC_Gate.h */,
+			);
+			path = AirCraftDSP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,10 +219,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A662128D1B39FC6F00E42235 /* AC_Gate.cpp in Sources */,
+				A66212891B39FB4000E42235 /* AC_TimeVaryingEnvelopeFollower.cpp in Sources */,
 				A604DB2C1B39B6F700F7016A /* BellExceptions.m in Sources */,
 				A604DB2B1B39B6F700F7016A /* BellDefs.m in Sources */,
 				A604DB2F1B39B6F700F7016A /* BufferPool.mm in Sources */,
 				A604DB2E1B39B6F700F7016A /* BellUtils.m in Sources */,
+				A662128A1B39FB4000E42235 /* AC_TimeVaryingLowPassFilter.cpp in Sources */,
 				A604DB2A1B39B6F700F7016A /* BellAudioFile.mm in Sources */,
 				A604DB361B39B6F700F7016A /* README.md in Sources */,
 				A604DB3E1B39C2D200F7016A /* main.mm in Sources */,
@@ -318,6 +346,7 @@
 				A604DB071B39B5ED00F7016A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

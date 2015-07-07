@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A604DAFD1B39B5ED00F7016A"
-               BuildableName = "SampleChop"
+               BuildableName = "samplechop"
                BlueprintName = "SampleChop"
                ReferencedContainer = "container:SampleChop.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A604DAFD1B39B5ED00F7016A"
-            BuildableName = "SampleChop"
+            BuildableName = "samplechop"
             BlueprintName = "SampleChop"
             ReferencedContainer = "container:SampleChop.xcodeproj">
          </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A604DAFD1B39B5ED00F7016A"
-            BuildableName = "SampleChop"
+            BuildableName = "samplechop"
             BlueprintName = "SampleChop"
             ReferencedContainer = "container:SampleChop.xcodeproj">
          </BuildableReference>
@@ -72,7 +72,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A604DAFD1B39B5ED00F7016A"
-            BuildableName = "SampleChop"
+            BuildableName = "samplechop"
             BlueprintName = "SampleChop"
             ReferencedContainer = "container:SampleChop.xcodeproj">
          </BuildableReference>

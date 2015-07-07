@@ -1,0 +1,20 @@
+
+AirCraftDSP:
+    repo: git@github.com:Air-Craft/AirCraftDSP.git
+    path: Vendor
+
+Bell:
+    repo: git@github.com:Air-Craft/Bell.git
+    path: Vendor
+
+EchoLogger:
+    repo: git@github.com:Air-Craft/EchoLogger.git
+    path: Vendor
+
+MusicalLib:
+    repo: git@github.com:Air-Craft/MusicalLib.git
+    path: Vendor
+
+Overline:
+    repo: git@github.com:yaakaito/Overline.git
+    path: Vendor
