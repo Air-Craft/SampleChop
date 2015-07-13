@@ -82,6 +82,7 @@ int main(int argc, char *argv[])
         air_craft::dsp::Gate *Lgate = new air_craft::dsp::Gate(openThreshold, closeThreshold, attackMs, releaseMs);
         air_craft::dsp::Gate *Rgate = new air_craft::dsp::Gate(openThreshold, closeThreshold, attackMs, releaseMs);
         
+        NSArray *noteStrings = @[@"C", @"C#", @"D", @"D#", @"E", @"F", @"F#", @"G", @"G#", @"A", @"A#", @"B"];
 
 
 
@@ -103,25 +104,31 @@ int main(int argc, char *argv[])
             if (!Lgate->open() && writing) { // End of sample
 
                 Float32 seconds = [outFile lengthInSeconds];
-                UInt32 frames = MIN(131072,[outFile lengthInFrames]);
+                UInt32 frames = [outFile lengthInFrames];//MIN(131072,[outFile lengthInFrames]);
                 NSLog(@"Frames: %@ Seconds: %@", @(frames), @(seconds));
                 if ([outFile lengthInSeconds] >= minFileLength) {
                     numberOfFiles++;
                 }
-
+                [outFile close];
+                [outFile reopenForReading];
                 Float32 X[frames];
                 Float32 Y[frames];
-                NSLog(@"Fram");
-                [outFile readFrames:frames intoBufferL:X bufferR:Y];
-                [outFile close];
+
+                [outFile readFrames:frames fromFrame:0 intoBufferL:X bufferR:Y];
+
+
                 Float32 maxHZValue = 0;
-                                NSLog(@"Fr");
                 fftConverter = FFTHelperCreate(frames);
-                NSLog(@"am");
                 maxHZ = strongestFrequencyHZ(X, fftConverter, frames, &maxHZValue);
                 writing = false;
-                NSLog(@"Closing file length: %@ HZ: %@", @(seconds), @(maxHZ));
 
+                Float32 reference = 440.0;
+                int midiNote = (12*(log10(maxHZ/reference)/log10(2)) + 57) + 0.5;
+
+
+                
+                NSLog(@"Closing file HZ: %@ Note: %@%@", @(maxHZ), [noteStrings objectAtIndex:midiNote%12], @(midiNote%12));
+                [outFile close];
                 
             } else if (Lgate->open() && !writing) { //Start a new file
                 writing = true;
