@@ -23,6 +23,7 @@
 		A662128A1B39FB4000E42235 /* AC_TimeVaryingLowPassFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A66212861B39FB4000E42235 /* AC_TimeVaryingLowPassFilter.cpp */; };
 		A662128D1B39FC6F00E42235 /* AC_Gate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A662128B1B39FC6F00E42235 /* AC_Gate.cpp */; };
 		D60C61351B4BF5290007937D /* AC_EnvolopeFollower.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D60C61331B4BF5290007937D /* AC_EnvolopeFollower.cpp */; };
+		D625FC811B53F505008E19E1 /* FFTHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = D625FC801B53F505008E19E1 /* FFTHelper.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -68,6 +69,8 @@
 		A662128C1B39FC6F00E42235 /* AC_Gate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AC_Gate.h; sourceTree = "<group>"; };
 		D60C61331B4BF5290007937D /* AC_EnvolopeFollower.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AC_EnvolopeFollower.cpp; sourceTree = "<group>"; };
 		D60C61341B4BF5290007937D /* AC_EnvolopeFollower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AC_EnvolopeFollower.h; sourceTree = "<group>"; };
+		D625FC7F1B53F505008E19E1 /* FFTHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTHelper.h; sourceTree = "<group>"; };
+		D625FC801B53F505008E19E1 /* FFTHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FFTHelper.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 		A604DB001B39B5ED00F7016A /* SampleChop */ = {
 			isa = PBXGroup;
 			children = (
+				D625FC7F1B53F505008E19E1 /* FFTHelper.h */,
+				D625FC801B53F505008E19E1 /* FFTHelper.mm */,
 				A604DB3D1B39C2D200F7016A /* main.mm */,
 			);
 			path = SampleChop;
@@ -227,6 +232,7 @@
 				A662128D1B39FC6F00E42235 /* AC_Gate.cpp in Sources */,
 				D60C61351B4BF5290007937D /* AC_EnvolopeFollower.cpp in Sources */,
 				A66212891B39FB4000E42235 /* AC_TimeVaryingEnvelopeFollower.cpp in Sources */,
+				D625FC811B53F505008E19E1 /* FFTHelper.mm in Sources */,
 				A604DB2C1B39B6F700F7016A /* BellExceptions.m in Sources */,
 				A604DB2B1B39B6F700F7016A /* BellDefs.m in Sources */,
 				A604DB2F1B39B6F700F7016A /* BufferPool.mm in Sources */,
